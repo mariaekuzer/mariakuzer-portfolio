@@ -1,0 +1,59 @@
+@font-face {
+    src: url("../fonts/Monserrat/Montserrat-Italic.ttf");
+    src: url("../fonts/Monserrat/Montserrat-Light.ttf");
+    src: url("../fonts/Monserrat/Montserrat-LightItalic.ttf");
+    src: url("../fonts/Monserrat/Montserrat-Medium.ttf");
+    src: url("../fonts/Monserrat/Montserrat-MediumItalic.ttf");
+    src: url("../fonts/Monserrat/Montserrat-Regular.ttf");
+    src: url("../fonts/Monserrat/Montserrat-SemiBold.ttf");
+    src: url("../fonts/Monserrat/Montserrat-SemiBoldItalic.ttf");
+    font-family: Montserrat;
+}
+
+@font-face {
+    src: url("../fonts/Poppins/Poppins-ExtraLight.ttf");
+    src: url("../fonts/Poppins/Poppins-ExtraLightItalic.ttf");
+    src: url("../fonts/Poppins/Poppins-Italic.ttf");
+    src: url("../fonts/Poppins/Poppins-Light.ttf");
+    src: url("../fonts/Poppins/Poppins-LightItalic.ttf");
+    src: url("../fonts/Poppins/Poppins-Medium.ttf");
+    src: url("../fonts/Poppins/Poppins-MediumItalic.ttf");
+    src: url("../fonts/Poppins/Poppins-Regular.ttf");
+    font-family: Poppins;
+}
+
+.name-div {
+  margin-left: 50px;
+}
+
+.name {
+    font-size: 70pt;
+    font-family: Poppins;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 430px;
+}
+
+.intro {
+    font-size: 22pt;
+    font-family: Poppins;
+    font-weight: 200;
+    max-width: 70%;
+    margin-top: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.resume, .email, .linkedin{
+    font-family: Montserrat;
+}
+
+.resume:hover, .email:hover, .linkedin:hover{
+    text-decoration: underline;
+}
