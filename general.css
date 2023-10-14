@@ -22,6 +22,38 @@
     font-family: Poppins;
 }
 
+/* General */
+
+h2 {
+    font-family: Montserrat;
+    font-size: 44pt;
+    font-weight: 800;
+}
+
+h3 {
+    font-family: Poppins;
+    font-size: 34pt;
+    font-weight: bolder;
+}
+
+h4 {
+    font-family: Poppins;
+    font-size: 24pt;
+    font-weight: 800;
+}
+
+p {
+    font-family: Poppins;
+    font-size: 12pt;
+}
+
+li {
+    font-family: Poppins;
+    font-size: 12pt;
+}
+
+/* Home Page */
+
 .name-div {
   margin-left: 50px;
 }
@@ -42,6 +74,77 @@
     margin-top: 10px;
 }
 
+/* Projects */
+
+.projects-title {                           /* title of the projects in home page*/
+    font-family: Poppins;
+    font-size: 48pt;
+    font-weight: 700;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.back-icon {
+    width: 35px;
+    margin-top: 20px;
+    margin-left: 12px;
+    position: sticky;
+    top: 20px;
+}
+
+.project-title-div {
+    margin-left: 50px;
+    height: 620px;
+    display: flex
+}
+
+.project-title  {                            /* title of the projects in project page*/
+    align-self: flex-end;
+}
+
+/* Project One */
+.project-one {
+    margin-left: 50px;
+    width: 500px;
+    transition: opacity .8s ease-in-out;
+}
+
+.project-one:hover {
+    opacity: 0.5;
+    transition: 0.4s;
+    transition: opacity .55s ease-in-out;
+}
+
+.image-project-one {
+    width: 400px;
+}
+
+.title-project-one {
+    font-family: Montserrat;
+    font-size: 18pt;
+    margin-left: 50px;
+    margin-top: -20px;
+}
+
+.taks {
+    width: 70%;
+    margin-left: 50px;
+}
+
+.po-one {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.po-subtitle {
+    margin-bottom: 0;
+}
+
+.po-text {
+    margin-top: 5px;
+}
+
+/* Personal info — resume, email and LinkedIn */
 .info {
     display: flex;
     justify-content: space-between;
@@ -56,4 +159,9 @@
 
 .resume:hover, .email:hover, .linkedin:hover{
     text-decoration: underline;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
 }
