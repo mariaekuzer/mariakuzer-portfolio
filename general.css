@@ -52,6 +52,16 @@ li {
     font-size: 12pt;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
 /* Home Page */
 
 .name-div {
@@ -87,19 +97,20 @@ li {
 .back-icon {
     width: 35px;
     margin-top: 20px;
-    margin-left: 12px;
+    margin-left: 15px;
     position: sticky;
     top: 20px;
 }
 
 .project-title-div {
     margin-left: 50px;
-    height: 620px;
+    height: calc(100vh - 20px);
     display: flex
 }
 
 .project-title  {                            /* title of the projects in project page*/
     align-self: flex-end;
+    font-size: 54pt;
 }
 
 /* Project One */
@@ -131,9 +142,37 @@ li {
     margin-left: 50px;
 }
 
-.po-one {
+.content {
+    width: 70%;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.process {
+    display: inline-flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.process-item {
+    font-family: Montserrat;
+    font-size: 14pt;
+    margin-right: 40px;
+    padding: 5px;
+    font-weight: 800;
+    background-color: rgb(226, 226, 241);
+    margin-top: 18px;
+}
+
+.po-image-one {
     width: 100%;
     margin-top: 50px;
+}
+
+.po-image-two {
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .po-subtitle {
@@ -143,6 +182,8 @@ li {
 .po-text {
     margin-top: 5px;
 }
+
+
 
 /* Personal info — resume, email and LinkedIn */
 .info {
@@ -159,9 +200,4 @@ li {
 
 .resume:hover, .email:hover, .linkedin:hover{
     text-decoration: underline;
-}
-
-a:visited {
-    text-decoration: none;
-    color: black;
 }

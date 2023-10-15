@@ -18,7 +18,7 @@
         <img class="back-icon" src="images/arrow-back.svg">
     </a>
 
-    <div class="project-title-div">
+    <div id="project-title" class="project-title-div">
         <h2 class="project-title">Rise, Health App</p>
     </div>
 
@@ -42,7 +42,7 @@
             — an european digital cultural heritage repository. We also had to came up with the problem and goal for
             this project.</p>
 
-        <img class="po-one" src="images/rise1.png" alt="Rise, Health App">
+        <img class="po-image-one" src="images/rise1.png" alt="Rise, Health App">
 
         <h4 class="po-subtitle">The Outcome</h4>
         <p class="po-text">An end-to-end program that helped people with mental health live healthier, happier lives
@@ -50,6 +50,56 @@
             and the power of habit.</p>
     </div>
 
+    <div class="content">
+
+        <h4 class="po-subtitle">The Process</h4>
+        <div class="process">
+            <h6 class="process-item">1. Research</h6>
+            <h6 class="process-item">2. Synthesis</h6>
+            <h6 class="process-item">3. Ideation</h6>
+            <h6 class="process-item">4. Prototyping</h6>
+        </div>
+        <p class="po-text">We started by having a brainstorming session <b style="font-weight: 800;">to explore
+                problems</b> for our project. Each team member wrote down words that came to mind on a Post-It note. We
+            repeated the process several times, resulting in a few ideas. After, we observed some similarities between
+            the generated ideas and decided to group them by themes.</p>
+        <img class="po-image-two" src="images/rise2.png" alt="Rise, Health App">
+        <p class="po-text">Within the themes we got, we chose to move forward with health. Since it is a theme we had
+            never worked on
+            before, we thought it would be a good challenge to develop our research and design thinking skills. Within
+            the various areas of health, we decided to follow with <b>mental health</b>.</p>
+
+
+        <h4 class="po-subtitle">1. Research</h4>
+        <p class="po-text">In recent years, there has been increasing acknowledgment of the importance of mental health
+            in <b>achieving
+                global development</b> goals. According to World Health Organization:</p>
+        <img class="po-image-two" src="images/rise3.png" alt="Rise, Health App">
+        <p class="po-text">After research it became clear what the problem to work on was and, consequently, its goal.
+        </p>
+    </div>
+
+    <script>
+        function scrollHandler() {
+            var element = document.getElementById('project-title');
+
+            var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top - 200;
+            var elementHeight = element.offsetHeight;
+            var scrollTop = document.documentElement.scrollTop;
+
+            var opacity = 1;
+
+            if (scrollTop > distanceToTop) {
+                opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+            }
+
+            if (opacity >= 0) {
+                element.style.opacity = opacity;
+            }
+        }
+
+        window.addEventListener('scroll', scrollHandler);
+    </script>
 </body>
 
 </html>
