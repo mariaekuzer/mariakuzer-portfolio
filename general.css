@@ -134,11 +134,15 @@ a:visited {
 }
 
 .image-project-one {
-    width: 400px;
+    width: 600px;
 }
 
-.image-project-three, .image-project-four {
-    width: 450px;
+.image-project-three {
+    width: 650px;
+}
+
+.image-project-four {
+    width: 650px;
 }
 
 .title-project-one {
