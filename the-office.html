@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Maria Kuzer</title>
+
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins" rel="stylesheet">
+</head>
+
+<body>
+    <!--Arrow back -->
+    <a href="index.html#projects">
+        <img class="back-icon" src="images/arrow-back.svg">
+    </a>
+
+    <!-- Project Name -->
+    <div id="project-title" class="project-title-div">
+        <h2 class="project-title">The Office,<br>Streaming App</p>
+    </div>
+
+    <!-- Tasks of the project -->
+    <div class="taks">
+        <h4 class="po-subtitle">My Role</h4>
+        <p class="po-text">I was one of the 2 members that led the UI/UX Design of this project.</p>
+
+        <h4 class="po-subtitle">Main Tasks</h4>
+        <ul class="po-text">
+            <li>Serve users through tangible solutions</li>
+            <li>Test ideas in high fidelity and evaluate user experience to affect strategy</li>
+            <li>Create mockups and flows for the user interface</li>
+            <li>Create a style guide</li>
+        </ul>
+
+        <h4 class="po-subtitle">The Challenge</h4>
+        <p class="po-text">Create a streaming application prototype for mobile and desktop devices, dedicated to only
+            one show or movie — we choose The Office. </p>
+        <img class="po-image-one" src="images/office1.png" alt="The Office, Streaming App">
+
+        <h4 class="po-subtitle">The Outcome</h4>
+        <p class="po-text">A streaming app that provide fans an immersive, engaging, and convenient platform to enjoy
+            the show's episodes, while also offering a deeper understanding of the cast and characters. The app's
+            intuitive interface and personalized recommendations create an enjoyable and tailored experience for every
+            user, fostering a vibrant community of "The Office" enthusiasts.</p>
+    </div>
+
+
+    <!-- Main content of the project -->
+    <div class="content">
+
+        <!-- Process -->
+        <h4 class="po-subtitle">The Process</h4>
+        <div class="process">
+            <h6 class="process-item process-item-office">1. Research</h6>
+            <h6 class="process-item process-item-office">2. Synthesis</h6>
+            <h6 class="process-item process-item-office">3. Ideation</h6>
+            <h6 class="process-item process-item-office">4. Design</h6>
+        </div>
+        <p class="po-text">We started by exploring several streaming applications — such as Netflix and HBO — to have a
+            better understanding of how this apps work and its features. From there we also note some points that should
+            be considered to add to this app. </p>
+
+        <!-- Research -->
+        <h4 class="po-subtitle">1. Research</h4>
+        <p class="po-text">While conducting a research about streaming apps, several common elements and considerations
+            arise. Such as (1) Video Player Interface; (2) Personalization and Recommendations; (3) Cross-Platform
+            Consistency; (4) Accessibility; (5) Social Interaction and Community Features.</p>
+        <img class="po-image-one" style="margin-bottom: 40px;" src="images/office2.png" alt="The Office, Streaming App">
+        <p class="po-text">Here the goal is to create a user-centric and enjoyable experience that keeps users engaged
+            and satisfied, while providing easy access to a vast library of content.</p>
+
+        <!-- Synthesis -->
+        <h4 class="po-subtitle">2. Synthesis </h4>
+        <img class="po-image-one" src="images/office3.png" alt="The Office, Streaming App">
+
+        <!-- Ideation -->
+        <h4 class="po-subtitle">3. Ideation </h4>
+        <h5 class="po-subtitle">Wireframes</h5>
+        <p class="po-text">Then we proceeded to create an initial version of the platform screens. This gives a better
+            understand of the project requirements, user needs, and business goals specific to the streaming platform.
+            Gathers insights on the app's features, content organization, and target audience.</p>
+        <img class="po-image-two" style="margin-left: 30px;" src="images/office4.png" alt="The Office, Streaming App">
+
+        <h5 class="po-subtitle">Style Guide</h5>
+        <img class="po-image-two" style="margin-left: 30px;" src="images/office5.png" alt="The Office, Streaming App">
+
+        <!-- Design -->
+        <h4 class="po-subtitle">4. Design </h4>
+        <img class="po-image-one" src="images/office6.png" alt="The Office, Streaming App">
+    </div>
+
+
+
+
+    <script>
+        function scrollHandler() {
+            var element = document.getElementById('project-title');
+
+            var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top - 200;
+            var elementHeight = element.offsetHeight;
+            var scrollTop = document.documentElement.scrollTop;
+
+            var opacity = 1;
+
+            if (scrollTop > distanceToTop) {
+                opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+            }
+
+            if (opacity >= 0) {
+                element.style.opacity = opacity;
+            }
+        }
+
+        window.addEventListener('scroll', scrollHandler);
+    </script>
+
+</body>
+
+</html>
