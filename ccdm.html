@@ -24,6 +24,77 @@
         <h2 class="project-title">Ciclo de Conversas<br>Design + Multimedia</p>
     </div>
 
+    <!-- Tasks of the project -->
+    <div class="taks" id="tasks">
+        <h4 class="po-subtitle">My Role</h4>
+        <p class="po-text">I was one of the 3 members that led the Identity and Design of the event — CCDM.</p>
+
+        <h4 class="po-subtitle">Main Tasks</h4>
+        <ul class="po-text">
+            <li>Clearly outline the event's purpose, target audience, and desired outcomes. Providing the foundation for
+                the brand identity.</li>
+            <li>Design a distinctive logo and visual elements that reflect the event's theme, personality, and message.
+                Consistency in color schemes, typography, and graphics is essential.</li>
+            <li>Create a professional event website and maintain active social media profiles that align with the brand
+                identity.</li>
+            <li>Design promotional materials such as flyers, posters, banners, and brochures that showcase the brand
+                identity. Ensure these materials convey key information effectively.</li>
+
+        </ul>
+
+        <h4 class="po-subtitle">The Challenge</h4>
+        <p class="po-text">The challenge was to develop the event's brand and visual identity and oversee design across
+            all
+            motion, graphic and typographic applications. And created all the elements — from branding to web — taking
+            inspiration from experimental technics.</p>
+        <img class="po-image-one" src="images/" alt="Ciclo de Conversas — Design + Multimedia">
+
+    </div>
+
+
+    <script>
+        function scrollHandler() {
+            var element = document.getElementById('project-title');
+
+            var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top - 200;
+            var elementHeight = element.offsetHeight;
+            var scrollTop = document.documentElement.scrollTop;
+
+            var opacity = 1;
+
+            if (scrollTop > distanceToTop) {
+                opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+            }
+
+            if (opacity >= 0) {
+                element.style.opacity = opacity;
+            }
+        }
+
+        window.addEventListener('scroll', scrollHandler);
+
+
+        function scrollHandlerTasks() {
+            var element = document.getElementById('tasks');
+
+            var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top - 50;
+            var elementHeight = element.offsetHeight;
+            var scrollTop = document.documentElement.scrollTop;
+
+            var opacity = 1;
+
+            if (scrollTop > distanceToTop) {
+                opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+            }
+
+            if (opacity >= 0) {
+                element.style.opacity = opacity;
+            }
+        }
+
+        window.addEventListener('scroll', scrollHandlerTasks);
+    </script>
+    </script>
 </body>
 
 </html>

@@ -25,7 +25,7 @@
     </div>
 
     <!-- Tasks of the project -->
-    <div class="taks">
+    <div class="taks" id="tasks">
         <h4 class="po-subtitle">My Role</h4>
         <p class="po-text">I was the UI/UX Designer of this project.</p>
 
@@ -41,7 +41,8 @@
         <h4 class="po-subtitle">The Challenge</h4>
         <p class="po-text">Re-design Dona Rosa's website to improve user experience through the shopping process, and
             improve user engagement. </p>
-        <img class="po-image-one" src="images/donarosa1.png" alt="Dona Rosa, E-commerce App">
+        <img class="po-image-one" style="margin-top: 70px; margin-bottom: 50px;" src="images/donarosa1.png"
+            alt="Dona Rosa, E-commerce App">
 
         <h4 class="po-subtitle">The Outcome</h4>
         <p class="po-text">App for purchasing products from Dona Rosa bio farm, providing users with a seamless,
@@ -57,10 +58,10 @@
         <!-- Process -->
         <h4 class="po-subtitle">The Process</h4>
         <div class="process">
-            <h6 class="process-item">1. Research</h6>
-            <h6 class="process-item">2. Synthesis</h6>
-            <h6 class="process-item">3. Ideation</h6>
-            <h6 class="process-item">4. Design</h6>
+            <h6 class="process-item process-item-dr">1. Research</h6>
+            <h6 class="process-item process-item-dr">2. Synthesis</h6>
+            <h6 class="process-item process-item-dr">3. Ideation</h6>
+            <h6 class="process-item process-item-dr">4. Design</h6>
         </div>
 
         <!-- Research -->
@@ -120,6 +121,26 @@
         }
 
         window.addEventListener('scroll', scrollHandler);
+
+        function scrollHandlerTasks() {
+            var element = document.getElementById('tasks');
+
+            var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top - 50;
+            var elementHeight = element.offsetHeight;
+            var scrollTop = document.documentElement.scrollTop;
+
+            var opacity = 1;
+
+            if (scrollTop > distanceToTop) {
+                opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+            }
+
+            if (opacity >= 0) {
+                element.style.opacity = opacity;
+            }
+        }
+
+        window.addEventListener('scroll', scrollHandlerTasks);
     </script>
 </body>
 

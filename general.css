@@ -167,7 +167,7 @@ a:visited {
 .content {
     width: 70%;
     margin-left: 50px;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 .process {
@@ -188,6 +188,10 @@ a:visited {
 
 .process-item-office {
     background-color:hsla(225, 89%, 31%, 0.479);
+}
+
+.process-item-dr {
+    background-color: rgba(255, 160, 96, 0.59);
 }
 
 .po-image-one {
