@@ -68,6 +68,11 @@ a:visited {
     color: black;
 }
 
+video {
+    width: 500px;
+    height: 400px;
+}
+
 /* Home Page */
 
 .name-div {
