@@ -142,9 +142,10 @@ a:visited {
 }
 
 .image-project-one {
-    width: 500px;
-    margin-bottom: 50px;
+    width: 550px;
+    margin-bottom: 57px;
     margin-left: 50px;
+    margin-top: 50px;
 }
 
 .image-project-three {
@@ -171,11 +172,11 @@ a:visited {
 }
 
 .video-ccdm-cover {
-    width: 600px;
+    width: 570px;
     height: 550px;
     margin-left: 50px;
-    margin-top: 40px;
-    margin-bottom: 28px;
+    margin-top: -25px;
+    margin-bottom: -18px;
 }
 
 .taks {
