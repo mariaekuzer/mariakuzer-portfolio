@@ -142,7 +142,9 @@ a:visited {
 }
 
 .image-project-one {
-    width: 600px;
+    width: 500px;
+    margin-bottom: 50px;
+    margin-left: 50px;
 }
 
 .image-project-three {
