@@ -144,12 +144,12 @@ a:visited {
 .image-project-one {
     width: 550px;
     margin-bottom: 57px;
-    margin-left: 50px;
     margin-top: 50px;
 }
 
 .image-project-three {
     width: 650px;
+    margin-left: -50px;
 }
 
 .image-project-four {
@@ -160,14 +160,12 @@ a:visited {
 .title-project-one {
     font-family: Montserrat;
     font-size: 18pt;
-    margin-left: 50px;
     margin-top: -20px;
 }
 
 .title-project-three {
     font-family: Montserrat;
     font-size: 18pt;
-    margin-left: 50px;
     margin-top: 40px;
 }
 
