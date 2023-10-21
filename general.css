@@ -68,12 +68,6 @@ a:visited {
     color: black;
 }
 
-video {
-    width: 500px;
-    height: 450px;
-    margin-left: 50px;
-}
-
 /* Home Page */
 
 .name-div {
@@ -125,12 +119,20 @@ video {
     font-size: 54pt;
 }
 
+.row-one, .row-two {                        /* to show two projects per line*/
+    display: inline-flex;
+}
+
 /* Project One */
-.project-one, .project-two, .project-three, .project-four {
+.project-one, .project-three {
     margin-left: 50px;
     margin-bottom: 120px;
     width: 500px;
     transition: opacity .8s ease-in-out;
+}
+
+.project-two, .project-four {
+    margin-left: 100px;
 }
 
 .project-one:hover, .project-two:hover,  .project-three:hover, .project-four:hover{
@@ -149,6 +151,7 @@ video {
 
 .image-project-four {
     width: 650px;
+    margin-bottom: 46px;
 }
 
 .title-project-one {
@@ -163,6 +166,14 @@ video {
     font-size: 18pt;
     margin-left: 50px;
     margin-top: 40px;
+}
+
+.video-ccdm-cover {
+    width: 600px;
+    height: 550px;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 28px;
 }
 
 .taks {
