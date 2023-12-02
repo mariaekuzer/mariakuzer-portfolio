@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Maria Kuzer</title>
+
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins" rel="stylesheet">
+</head>
+
+<body>
+    <!--Arrow back -->
+    <a href="index.html#projects">
+        <img class="back-icon" src="images/arrow-back.svg">
+    </a>
+
+    <!-- Project Name -->
+    <div id="project-title" class="project-title-div">
+        <h2 class="project-title">Forsythia,<br>Typographic Animation</p>
+    </div>
+
+    <!-- Tasks of the project -->
+    <div class="taks" id="tasks">
+        <video style="width: 100%; height: 100%; margin-left: 0; margin-top: 40px; margin-bottom: 40px;" autoplay>
+            <source type="video/mp4" src="images/forsythia/forsythia.mp4">" Sorry, your browser doesn't
+            support this
+            video."
+        </video>
+
+        <h4 class="po-subtitle">My Role</h4>
+        <p class="po-text">I was the designer of this project.</p>
+
+        <h4 class="po-subtitle">The Challenge</h4>
+        <p class="po-text">Make a short typographic video based on an example of Concrete Poetry. The video should focus
+            on exploring the ideas and structures that present in the original poem, but use the added dimensions of
+            time, movement and sound, in order to create an original work. The poem was chosen from the selection
+            provided by the teachers.</p>
+    </div>
+
+    <!-- Main content of the project -->
+    <div class="content">
+
+        <p class="po-text">The concept of the poem’s animation relates with the idea of spring. This was elaborated by
+            exploring the meaning of the poem in cause — Forsythia by Mary Ellen Solt — and also the meaning of spring.
+            For this last one, I found interesting to explore an excerpt from the chapter “A False Spring” from A
+            Moveable Feast by Ernest Hemingway.</p>
+
+        <img class="po-image-one" src="images/forsythia/f01.png" alt="Forsythia, Typographic Animation">
+
+        <p class="po-text" style="margin-top: 60px;">Forsythia represents the arrival of good weather, the blossoming of
+            flowers and everything
+            good that spring
+            brings with it.
+            On the other hand, the American author portrays spring as a promised happiness, but that ends up to fail and
+            be unfulfilled.</p>
+
+        <p class="po-text">The poem animation intends to portrait spring and its forthcoming characteristics as a
+            supposed prosperity time, but also an unfulfilled one.</p>
+
+        <img style="width: 600px; margin-left: 150px; margin-top: 50px; margin-bottom:50px;"
+            src="images/forsythia/f-music.png" alt="Forsythia, Typographic Animation">
+
+        <p class="po-text">The animation was made in After Effects — licensed application —, and the music played is
+            Allégro by Emmit Fenn, download through Youtube Studio on the 8th November 2020 — with Youtube Audio Library
+            License.</p>
+
+
+        <h5 style="margin-bottom: 40px;">Work selected and exhibited at the film festival<br>“Caminhos do Cinema
+            Português”.</h5>
+    </div>
+
+    <script>
+        function scrollHandler() {
+            var element = document.getElementById('project-title');
+
+            var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top - 200;
+            var elementHeight = element.offsetHeight;
+            var scrollTop = document.documentElement.scrollTop;
+
+            var opacity = 1;
+
+            if (scrollTop > distanceToTop) {
+                opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+            }
+
+            if (opacity >= 0) {
+                element.style.opacity = opacity;
+            }
+        }
+
+        window.addEventListener('scroll', scrollHandler);
+
+        function scrollHandlerTasks() {
+            var element = document.getElementById('tasks');
+
+            var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top - 50;
+            var elementHeight = element.offsetHeight;
+            var scrollTop = document.documentElement.scrollTop;
+
+            var opacity = 1;
+
+            if (scrollTop > distanceToTop) {
+                opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+            }
+
+            if (opacity >= 0) {
+                element.style.opacity = opacity;
+            }
+        }
+
+        window.addEventListener('scroll', scrollHandlerTasks);
+    </script>
+</body>
+
+</html>

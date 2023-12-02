@@ -119,12 +119,12 @@ a:visited {
     font-size: 54pt;
 }
 
-.row-one, .row-two {                        /* to show two projects per line*/
+.row-one, .row-two, .row-three {                        /* to show two projects per line*/
     display: inline-flex;
 }
 
 /* Project One */
-.project-one, .project-three {
+.project-one, .project-three, .project-five {
     margin-left: 50px;
     margin-bottom: 120px;
     width: 500px;
@@ -135,7 +135,7 @@ a:visited {
     margin-left: 100px;
 }
 
-.project-one:hover, .project-two:hover,  .project-three:hover, .project-four:hover{
+.project-one:hover, .project-two:hover,  .project-three:hover, .project-four:hover, .project-five:hover{
     opacity: 0.5;
     transition: 0.4s;
     transition: opacity .55s ease-in-out;
@@ -148,13 +148,19 @@ a:visited {
 }
 
 .image-project-three {
-    width: 650px;
+    width: 600px;
     margin-left: -50px;
+    margin-top: -50px;
 }
 
 .image-project-four {
     width: 650px;
     margin-bottom: 46px;
+}
+
+.image-project-five {
+    width: 650px;
+    margin-left: -50px;
 }
 
 .title-project-one {
@@ -166,8 +172,15 @@ a:visited {
 .title-project-three {
     font-family: Montserrat;
     font-size: 18pt;
-    margin-top: 40px;
+    margin-top: 5px;
 }
+
+.title-project-five {
+    font-family: Montserrat;
+    font-size: 18pt;
+    margin-top: 30px;
+}
+
 
 .video-ccdm-cover {
     width: 570px;
